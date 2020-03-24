@@ -1,4 +1,4 @@
-## 安装
+# 安装
 
 ### 注意事项
 
@@ -61,19 +61,17 @@ docker run -d           \
 
 ### 基于其他发行版安装
 
-其他的发行版，如树莓派的raspbian8/9,ubuntu14.04,deepin的安装脚本在install目录可以找到，但是不完善，安装后需要部分手工修复调整。
+其他的发行版，如树莓派的 `raspbian 8/9` `Ubuntu 14.04` 的安装脚本在 `install` 目录可以找到，但是不完善，安装后需要部分手工修复调整。
 
-https://www.youtube.com/watch?v=hRap7ettUWc
+[脚本列表传送门](https://github.com/zhblue/hustoj/tree/master/trunk/install)
 
-树莓派用户请用rpi分支源码（实验性质）手工搭建web，并编译安装core目录下的judged和judge_client。
-
-[更多安装方法](https://github.com/zhblue/hustoj/blob/master/trunk/install/README)
+参考视频：<https://www.youtube.com/watch?v=hRap7ettUWc>
 
 ### LiveCD 下载安装
 
 Linux不熟悉的用户推荐使用: `HUSTOJ_LiveCD` （发送 `livecd` 到微信公众号 `onlinejudge` ，获得百度云下载链接）
 
-`HUSTOJ_Windows` （仅支持XP,QQ群23361372共享文件）进行安装。
+`HUSTOJ_Windows` （仅支持 XP ， QQ 群 `23361372` 共享文件）进行安装。
 
 使用说明见 `iso` 中 `README` ，也可以参考 [LiveCD简介](/LiveCD)  
 

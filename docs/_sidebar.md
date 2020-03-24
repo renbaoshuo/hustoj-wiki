@@ -2,7 +2,7 @@
 
 * 用户指南
     * [简介](/README)
-    * [部署](/Deploy)
+    * [安装](/Deploy)
         * [基于 Ubuntu 18.04 安装](/Deploy?id=基于-ubuntu-1804-安装)
         * [基于 Deepin15+ 安装](/Deploy?id=基于-deepin15-安装)
         * [基于 CentOS 安装](/Deploy?id=基于-centos-安装)
@@ -12,7 +12,11 @@
 
 * 常见问题
 
+    * 待补充
+
 * 源码相关
+
+    * 待补充
 
 * 关于
     * [关于本项目](/About)
