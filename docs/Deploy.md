@@ -14,16 +14,7 @@
 
 阿里云用户请百度 `阿里云 80端口`
 
-### 基于 Ubuntu 18.04 通过 gitee 安装
-
-**腾讯云用户请[换软件源](https://yq.aliyun.com/articles/704603)**
-
-```
-wget https://gitee.com/zhblue/hustoj/raw/master/trunk/install/install-ubuntu18-gitee.sh
-sudo bash install-ubuntu18-gitee.sh
-```
-
-### 基于Ubuntu 18.04安装
+### 基于 Ubuntu 18.04 安装
 
 **腾讯云用户请[换软件源](https://yq.aliyun.com/articles/704603)**
 
@@ -78,5 +69,11 @@ https://www.youtube.com/watch?v=hRap7ettUWc
 
 [更多安装方法](https://github.com/zhblue/hustoj/blob/master/trunk/install/README)
 
+### LiveCD 下载安装
 
+Linux不熟悉的用户推荐使用: `HUSTOJ_LiveCD` （发送 `livecd` 到微信公众号 `onlinejudge` ，获得百度云下载链接）
+
+`HUSTOJ_Windows` （仅支持XP,QQ群23361372共享文件）进行安装。
+
+使用说明见 `iso` 中 `README` ，也可以参考 [LiveCD简介](/LiveCD)  
 
