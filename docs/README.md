@@ -13,6 +13,6 @@
 
 #### 硬件需求
 
-![](images/hardware.png)
+<div style="max-width:400px"><img src="images/hardware.png" /></div>
 
 
