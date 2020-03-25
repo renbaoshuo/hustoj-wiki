@@ -1,23 +1,22 @@
 
+**HUSTOJ**
 
-* 用户指南
-    * [简介](/README)
-    * [安装](/Deploy)
-        * [基于 Ubuntu 18.04 安装](/Deploy?id=基于-ubuntu-1804-安装)
-        * [基于 Deepin15+ 安装](/Deploy?id=基于-deepin15-安装)
-        * [基于 CentOS 安装](/Deploy?id=基于-centos-安装)
-        * [基于 Docker 安装](/Deploy?id=基于-docker-安装)
-        * [基于其他发行版安装](/Deploy?id=基于其他发行版安装)
-        * [LiveCD 下载安装](/Deploy?id=livecd-下载安装)
+    * 用户指南
+        * [简介](/README)
+        * [安装](/Deploy)
+        
+    * 常见问题
 
-* 常见问题
+        * 待补充
 
-    * 待补充
+    * 源码相关
+        * [结构简析](/Composition)
+            * [Core 解析](/Composition?id=Core-解析)
+            * [Web 解析](/Composition?id=Web-解析)
+            * [Core 与 Web 的连接方式解析](/Composition?id=Core-与-Web-的连接方式解析)
+            * [数据库解析](/Composition?id=数据库解析)
+            * [LiveCD 解析](/Composition?id=LiveCD-解析)
 
-* 源码相关
-
-    * 待补充
-
-* 关于
-    * [关于本项目](/About)
-    * [贡献者](/Contributors)
+    * 关于
+        * [关于本项目](/About)
+        * [贡献者](/Contributors)

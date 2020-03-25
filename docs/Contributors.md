@@ -1,4 +1,12 @@
 # 贡献者名单
 
-TODO
++ zhblue
+
++ 夏夏
+
++ qq2663797538@gmail.com
+
++ bigballon
+
++ 任宝硕
 
