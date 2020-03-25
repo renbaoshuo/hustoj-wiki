@@ -1,4 +1,4 @@
-## HUSTOJ Special Judge 的说明及使用
+# HUSTOJ Special Judge 的说明及使用
 
 ### 说明
 
