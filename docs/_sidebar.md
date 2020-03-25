@@ -4,8 +4,9 @@
   - 用户指南
     - [简介](/README)
     - [安装](/Deploy)
-    - 使用
+    - 使用帮助
       - [建立分布式判题系统](/MultiJudge)
+      - [集成 Moodle 活动自动给分](/MoodleIntegration)
     - [常见问题](/FAQ)
 
   - 源码相关
