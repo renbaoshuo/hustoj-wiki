@@ -4,6 +4,8 @@
   - 用户指南
     - [简介](/README)
     - [安装](/Deploy)
+    - [使用](/Use/README)
+      - [建立分布式判题系统](/Use/MultiJudge)
 
   - 常见问题
     - 待补充
