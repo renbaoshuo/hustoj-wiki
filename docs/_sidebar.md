@@ -1,5 +1,5 @@
 
-**HUSTOJ**
+- **HUSTOJ**
 
   - 用户指南
     - [简介](/README)
@@ -20,4 +20,3 @@
       - [关于本项目](/About)
       - [贡献者](/Contributors)
 
-      
