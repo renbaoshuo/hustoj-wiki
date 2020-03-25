@@ -1,4 +1,4 @@
-## HUSTOJ FAQ
+# HUSTOJ FAQ
 
 #### 改坏了代码怎么办？
 
