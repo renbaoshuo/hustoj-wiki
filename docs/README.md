@@ -13,6 +13,6 @@
 
 #### 硬件需求
 
-
+![](images/hardware.png)
 
 
