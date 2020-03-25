@@ -71,3 +71,102 @@
 16．如何上传多组数据？
  
 加好题目后在题目列表找 `TestData` ，点击上传。主文件名一样的 `*.in` `*.out`，如 `test1.in` `test1.out`
+
+17．无法正常判题，一直 `pending`
+
+可能是 `judged` 服务未能正常启动，执行如下命令即可。
+```bash
+sudo judged
+```
+
+或者检查 `/home/judge/etc/judge.conf` 中的数据库账号配置，修正后再次重启服务器或执行 `sudo pkill -9 judged` 。
+等待一会儿再执行 `sudo judged`
+
+18．Runtime error
+
+若出现 `Runtime Error:[ERROR] A Not allowed system call: runid:10735 CALLID:20` 时，编辑 `okcalls64.h` 或 `okcalls32.h`（取决于您使用的 `Linux`  版本 `uname -a` 出现 `x64` 字样则 `64` 位，`i686` 字样则 `32` 位），在对应的语言数组里增加内容。如 `C` 或 `C++` ：
+
+```cpp
+int LANG_CV[256] = { 85, 8,140, SYS_time, SYS_read, SYS_uname, SYS_write, SYS_open,
+SYS_close, SYS_execve, SYS_access, SYS_brk, SYS_munmap, SYS_mprotect, SYS_mmap2,
+SYS_fstat64, SYS_set_thread_area, 252, 0 };
+```
+
+将上述报错中 `CALLID:` 后的数字，增加到数组中非末尾的位置，如果这个数字是0，请加在首位。
+
+```cpp
+int LANG_CV[256] = { 20, 85, 8,140, SYS_time, SYS_read, SYS_uname, SYS_write,
+SYS_open,SYS_close, SYS_execve, SYS_access, SYS_brk, SYS_munmap,
+SYS_mprotect,SYS_mmap2, SYS_fstat64, SYS_set_thread_area, 252, 0 };
+```
+
+修改完成，重新在 `core` 目录执行 `sudo ./make.sh` 然后重新测试，如果发现再次出现类似错误，请留意 `CALLID` 数字变化，重复上述步骤直至问题消失。
+
+19．Ubuntu 下 `Apache2` 报错
+
+Ubuntu 环境，当 `apache2` 重启提示时：
+```
+* Starting web server apache2
+
+apache2: Could not reliably determine the server's fully qualified domain name,
+
+... waiting apache2: Could not reliably determine the server's fully qualified domain
+name, using 127.0.1.1 for ServerName
+```
+
+解决的方法是：
+
+```bash
+sudo vim /etc/apache2/sites-available/default
+```
+
+打开 `default` 文件后，在 `default` 文件顶端加入：`ServerName 127.0.0.1`
+
+重启 `apache2` 就不会提示上述错误了。
+```bash
+sudo /etc/init.d/apache2 restart
+```
+
+20．页面总是需要刷新才能显示
+
+如果您使用的是 `ie6` 浏览器，请禁用服务器上的 `deflate` 模块。
+
+```bash
+sudo rm /etc/apache2/mods-enabled/deflate.* 
+sudo /etc/init.d/apache2 restart
+```
+
+21．添加题目时出现 `warning/` 题目目录下数据没有自动生成
+
+需要修改系统 `php.ini` ，给予 `php` 操作数据目录的权限。以下是推荐修改的设置。
+```
+sudo gedit /etc/php5/apache2/php.ini open_basedir=/home/judge/data:/var/www/JudgeOnline:/tmp
+```
+
+```ini
+max_execution_time = 300    
+; Maximum execution time of each script, in seconds
+max_input_time = 600 
+memory_limit = 128M 
+; Maximum amount of memory a script may consume
+post_max_size = 64M 
+upload_tmp_dir =/tmp 
+upload_max_filesize = 64M
+```
+重启 `Apache` 即可。
+
+22．添加的题目普通用户看不到
+
+题目默认为删除状态，只有管理员能访问，当管理员确认题目没有问题后，可以点击 `ProblemList` 中的 `Resume` 启用题目。
+
+23．Java 总是CE/RE
+
+目前只支持 `sun` 原版 `jdk` 和 `openjdk`，其他 `jdk` 暂不能保证支持。
+
+24．管理员不能查看别人的源码
+
+请给自己增加 `source_browser` 权限。
+
+25．fckeditor 上传的图片在题目中无法显示
+
+如果 `web` 安装位置不在 `/JudgeOnline` ，需要手工修改 `/fckeditor/editor/filemanager/connectors/php/config.php` 的第 37 行： `$Config['UserFilesPath'] ='/JudgeOnline/upload/'.date("Ym")."/" ;` 将 `JudgeOnline` 修改为对应的 `OJ web` 路径，如 `oj`。
