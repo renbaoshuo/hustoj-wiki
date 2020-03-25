@@ -5,6 +5,7 @@
     - [简介](/README)
     - [安装](/Deploy)
     - 使用帮助
+      - [Special Judge](/SpecialJudge)
       - [建立分布式判题系统](/MultiJudge)
       - [集成 Moodle](/MoodleIntegration)
     - [常见问题](/FAQ)

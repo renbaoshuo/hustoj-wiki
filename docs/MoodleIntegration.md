@@ -8,7 +8,7 @@
 
 首先用脚本安装HUSTOJ，然后在 `/etc/nginx/sites-enbaled/default` 文件中 `location / { ` 这一行之前添加下面的内容：
 
-```nginx
+```conf
         if (!-e $request_filename) {
            rewrite "^(.*\.php)(/)(.*)$" $1?file=/$3 last;
         }
