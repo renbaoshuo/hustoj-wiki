@@ -1,5 +1,9 @@
 ## HUSTOJ FAQ
 
+0．改坏了代码怎么办？
+
+自己不小心改坏了 web 代码，可以使用 install 目录中的 fixing.sh 进行系统修复。
+
 1．如何进入后台？
 
 以管理员身份登录，点击 `Admin/管理` 进入后台。
@@ -102,9 +106,10 @@ SYS_mprotect,SYS_mmap2, SYS_fstat64, SYS_set_thread_area, 252, 0 };
 
 修改完成，重新在 `core` 目录执行 `sudo ./make.sh` 然后重新测试，如果发现再次出现类似错误，请留意 `CALLID` 数字变化，重复上述步骤直至问题消失。
 
-19．Ubuntu 下 `Apache2` 报错
+19．Ubuntu 下 `Apache2` 报错（针对旧版本，新版本使用 `nginx`）
 
 Ubuntu 环境，当 `apache2` 重启提示时：
+
 ```
 * Starting web server apache2
 
@@ -170,3 +175,5 @@ upload_max_filesize = 64M
 25．fckeditor 上传的图片在题目中无法显示
 
 如果 `web` 安装位置不在 `/JudgeOnline` ，需要手工修改 `/fckeditor/editor/filemanager/connectors/php/config.php` 的第 37 行： `$Config['UserFilesPath'] ='/JudgeOnline/upload/'.date("Ym")."/" ;` 将 `JudgeOnline` 修改为对应的 `OJ web` 路径，如 `oj`。
+
+
