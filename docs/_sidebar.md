@@ -16,7 +16,7 @@
       - [数据库解析](/Composition?id=数据库解析)
       - [LiveCD 解析](/Composition?id=LiveCD-解析)
 
-    - 关于
-      - [关于本项目](/About)
-      - [贡献者](/Contributors)
+  - 关于
+    - [关于本项目](/About)
+    - [贡献者](/Contributors)
 
