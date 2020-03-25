@@ -5,6 +5,7 @@
     - [简介](/README)
     - [安装](/Deploy)
     - 使用帮助
+      - [升级](/Update)
       - [备份与还原](/Backup)
       - [Special Judge](/SpecialJudge)
       - [建立分布式判题系统](/MultiJudge)
