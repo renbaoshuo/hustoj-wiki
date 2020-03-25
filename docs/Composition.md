@@ -17,7 +17,7 @@ HUSTOJ 分为两大部分，`core` 和 `web` ，分别对应判题和数据管�
 <http://blog.csdn.net/legan/article/details/40746829>
 <http://blog.csdn.net/legan/article/details/40789939>
 
-#### `judged` 解析
+#### judged 解析
 
 ##### 简介
 
@@ -33,16 +33,16 @@ judged 可以接受一个参数作为自己的主目录，默认是 `/home/judge
 
 每个主目录可以有自己的 `etc/judge.conf` 数据目录可以共享，runX 目录需要独立。
 
-##### `judged` 调试模式
+##### judged 调试模式
 
 judged 接受参数指定目录的情况下，还可以再接受一个 `debug` 作为调试模式开关。如：`sudo judged /home/judge/local debug` 调试模式的 `judged` 将不会进入后台，并且将输出大量调试信息，其调用的judge_client 也工作在debug 模式。
-#### `judge_client` 解析
+#### judge_client 解析
 
 ##### 简介
 
-当发现新任务时产生judge_client 进程。
+当发现新任务时产生 `judge_client` 进程。
 
-judge_client 进程为实际判题程序，负责准备运行环境、数据，运行并监控目标程序的系统调用，采集运行指标，判断运行结果。
+`judge_client` 进程为实际判题程序，负责准备运行环境、数据，运行并监控目标程序的系统调用，采集运行指标，判断运行结果。
 
 ![工作流程图](images/work1.jpg)
 
@@ -63,6 +63,7 @@ judge_client 进程为实际判题程序，负责准备运行环境、数据，�
 #### sim 简介
 
 当配置为启用抄袭检查时，judge_client 将调用 `sim`，判断相似性结果，并写回数据库或 `web` 端。
+
 `sim` 为第三方应用程序， 可进行语法分析判断文本相似度， 通过检验的程序将由 `judge_client` 复制进题目数据的 `ac` 目录，成为新的参考样本。
 
 #### 配置文件 `judge.conf` 注释
@@ -116,7 +117,7 @@ O`J_LANG_SET=0,1,2,3,4`    |  判哪些语言的题目
 
 4. 修改积分方式，按照希望的方式积分。可能需要给 TM 增加字段 `$p_wa_best_rate` 记录每题最大通过率。
 
-#### 配置文件db_info.inc.php 注释
+#### 配置文件 `db_info.inc.php` 注释
 
 配置                                  |                      注释
 ------------------------------------  |  ------------------------------------------
@@ -179,20 +180,20 @@ O`J_LANG_SET=0,1,2,3,4`    |  判哪些语言的题目
 1     |  `compileinfo`      |  记录编译错误的记录     |
 2     |  `contest`          |  竞赛表                | 
 3     |  `contest_problem`  |  竞赛题目              |
-4     | `loginlog`          |  登入日志              |  记录正确与错误的登入日志 
-5     | `mail`              |  消息列表              | 
-6     | `news`              |  新闻表                | 
-7     | `online`            |  用户在线数据统计       | 
-8     | `privilege`         |  权限授予              |
-9     | `problem`           |  题目表                |
-10    | `reply`             |  论坛（帖子及回复）表   |
-11    | `runtimeinfo`       |  运行错误信息           |
-12    | `sim`               |  相似度检测表           |  用于防作弊
-13    | `solution`          |  程序运行结果记录       | 
-14    | `source_code`       |  提交的源码             |
-15    | `topic`             |  论坛帖子表             |
-16    | `users`             |  用户信息               |
-17    | `custominput`       |  用于在线IDE            |
+4     |  `loginlog`         |  登入日志              |  记录正确与错误的登入日志 
+5     |  `mail`             |  消息列表              | 
+6     |  `news`             |  新闻表                | 
+7     |  `online`           |  用户在线数据统计       | 
+8     |  `privilege`        |  权限授予              |
+9     |  `problem`          |  题目表                |
+10    |  `reply`            |  论坛（帖子及回复）表   |
+11    |  `runtimeinfo`      |  运行错误信息           |
+12    |  `sim`              |  相似度检测表           |  用于防作弊
+13    |  `solution`         |  程序运行结果记录       | 
+14    |  `source_code`      |  提交的源码             |
+15    |  `topic`            |  论坛帖子表             |
+16    |  `users`            |  用户信息               |
+17    |  `custominput`      |  用于在线IDE            |
 
 #### 数据库表详解
 
