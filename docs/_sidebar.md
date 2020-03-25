@@ -6,8 +6,7 @@
     - [安装](/Deploy)
     - 使用
       - [建立分布式判题系统](/MultiJudge)
-    - 常见问题
-      - 待补充
+    - [常见问题](/FAQ)
 
   - 源码相关
     - [结构简析](/Composition)
@@ -20,5 +19,6 @@
 
   - 关于
     - [关于本项目](/About)
+    - [更新日志](/UpdateLog)
     - [贡献者](/Contributors)
 

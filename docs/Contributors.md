@@ -1,5 +1,11 @@
 # 贡献者名单
 
+### 源码
+
+请前往 [Github](https://github.com/zhblue/hustoj/graphs/contributors) 查看。
+
+### 文档
+
 + zhblue
 
 + 夏夏
