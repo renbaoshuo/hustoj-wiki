@@ -13,9 +13,7 @@ HUSTOJ 分为两大部分，`core` 和 `web` ，分别对应判题和数据管�
 
 ### Core 解析
 
-`core` 分 `3` 部分，`judged` 、 `judge_client` 、 `sim` 。源码解读见以下链接：
-<http://blog.csdn.net/legan/article/details/40746829>
-<http://blog.csdn.net/legan/article/details/40789939>
+`core` 分 `3` 部分，`judged` 、 `judge_client` 、 `sim` 。源码解读：[点我](/Compostition-Code)
 
 #### judged 解析
 

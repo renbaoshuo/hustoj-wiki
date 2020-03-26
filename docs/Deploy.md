@@ -10,7 +10,7 @@
 
 **不要**使用 `LNMP` `LAMP` `Cpanel` `宝塔` 等其他面板程序提供的 `MySQL` `Nginx` `Apache` `PHP` 环境，安装脚本已经包含所有必须环境的安装。
 
-**腾讯云用户请[换软件源](https://yq.aliyun.com/articles/704603)，增加 `multiverse` 。**
+**腾讯云用户请[换软件源](https://developer.aliyun.com/mirror/ubuntu)，增加 `multiverse` 。**
 
 阿里云用户请百度 `阿里云 80端口`。
 
@@ -18,7 +18,7 @@
 
 ### 基于 Ubuntu 18.04 安装
 
-**腾讯云用户请[换软件源](https://yq.aliyun.com/articles/704603)**
+**腾讯云用户请[换软件源](https://developer.aliyun.com/mirror/ubuntu)**
 
 ```bash
 wget https://github.com/zhblue/hustoj/raw/master/trunk/install/install-ubuntu18.04.sh
