@@ -3,7 +3,7 @@
 
   - 用户指南
     - [简介](/README)
-    - [安装](/Deploy)
+    - [安装](/Install)
     - 使用帮助
       - [升级](/Update)
       - [备份与还原](/Backup)

@@ -16,12 +16,19 @@
 
 !> **安装完成，用admin作为用户名注册一个用户，自动成为管理员。**
 
+### 自动识别系统安装脚本
+
+```bash
+wget https://github.com/zhblue/hustoj/raw/master/trunk/install/install+.sh -O install+.sh
+sudo bash install+.sh
+```
+
 ### 基于 Ubuntu 18.04 安装
 
 **腾讯云用户请[换软件源](https://developer.aliyun.com/mirror/ubuntu)**
 
 ```bash
-wget https://github.com/zhblue/hustoj/raw/master/trunk/install/install-ubuntu18.04.sh
+wget https://github.com/zhblue/hustoj/raw/master/trunk/install/install-ubuntu18.04.sh -O install-ubuntu18.04.sh
 sudo bash install-ubuntu18.04.sh
 ```  
     
@@ -30,7 +37,7 @@ sudo bash install-ubuntu18.04.sh
 国内桌面用户 Deepin15.9+ （内置QQ微信WPS方便出题人本地测试，最新15.11测试通过）
 
 ```bash
-wget https://github.com/zhblue/hustoj/raw/master/trunk/install/install-deepin15.9.sh
+wget https://github.com/zhblue/hustoj/raw/master/trunk/install/install-deepin15.9.sh -O install-deepin15.9.sh
 sudo bash install-deepin15.9.sh
 ```
     
@@ -39,7 +46,7 @@ sudo bash install-deepin15.9.sh
 假如你不得已非要用 CentOS7 （有的语言可能不支持，但是某些机架式服务器的 Raid 卡 Ubuntu 不认只能装 CentOS ），可以用下面脚本快速安装 OJ ：  
 
 ```bash
-wget https://raw.githubusercontent.com/zhblue/hustoj/master/trunk/install/install-centos7.sh
+wget https://raw.githubusercontent.com/zhblue/hustoj/master/trunk/install/install-centos7.sh -O install-centos7.sh
 sudo bash install-centos7.sh
 ```
 
