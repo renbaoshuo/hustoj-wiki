@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
         <title>HUSTOJ 文档</title>
     </head>
     <body>
@@ -40,5 +41,19 @@
         <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
         <!-- 引入搜索模块 -->
         <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+        <!-- 引入 Gitalk 模块 -->
+        <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+        <script>
+            const gitalk = new Gitalk({
+                    clientID: 'Github Application Client ID',
+                    clientSecret: 'Github Application Client Secret',
+                    repo: 'Github repo',
+                    owner: 'Github repo owner',
+                    admin: ['Github repo collaborators, only these guys can initialize github issues'],
+                    // facebook-like distraction free mode
+                    distractionFreeMode: false
+                });
+        </script>
     </body>
 </html>
