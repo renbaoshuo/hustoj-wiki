@@ -17,8 +17,11 @@
 
 <div style="max-width:400px"><img src="images/hardware.png" /></div>
 
-> 图中硬件解释：
+
 > 10 人版：树莓派 Zero
+>
 > 50 人版：老爷机
+>
 > 100 人版：云服务器（1 vCPU 1GiB）
+>
 > 3000 人版：E5-2670 机架式服务器
