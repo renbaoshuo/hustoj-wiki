@@ -14,12 +14,16 @@
 
   - 源码相关
     - [结构简析](/Composition)
-      - [Core 解析](/Composition?id=Core-解析)
-      - [Web 解析](/Composition?id=Web-解析)
+      - [Core 解析](/Composition-Core)
+        - [judged 解析](Composition-Core?id=judged-解析)
+        - [judge_client 解析](/Composition-Core?id=judge_client-解析)
+        - [sim 简介](/Composition-Core?id=sim-简介)
+        - [配置文件注释](/Composition-Core?id=配置文件注释)
+      - [Web 解析](/Composition-web?id=Web-解析)
       - [Core 与 Web 的连接方式解析](/Composition?id=Core-与-Web-的连接方式解析)
       - [数据库解析](/Composition?id=数据库解析)
       - [LiveCD 解析](/Composition?id=LiveCD-解析)
-    - 待补充
+    - 其他：待补充
 
   - 关于
     - [关于本项目](/About)
