@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
         <title>HUSTOJ 文档</title>
     </head>
     <body>
@@ -40,5 +41,19 @@
         <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
         <!-- 引入搜索模块 -->
         <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+        <!-- 引入 Gitalk 模块 -->
+        <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+        <script>
+            const gitalk = new Gitalk({
+                    clientID: '7a5ff9873b254a561d27',
+                    clientSecret: '8893e69ad53e658e06fd349b8d8550cedf443490',
+                    repo: 'hustoj-wiki',
+                    owner: 'renbaoshuo',
+                    admin: ['renbaoshuo', 'zhblue', 'DragonLucifer', 'flymyd', 'gavincc', 'Geekxiong', 'Henrai', 'mjiuming', 'muzea', 'MX-Qulin', 'skykiss', 'xincmm', 'yemaster'],
+                    // facebook-like distraction free mode
+                    distractionFreeMode: false
+                });
+        </script>
     </body>
 </html>
