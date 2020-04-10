@@ -34,6 +34,8 @@ sudo bash install-ubuntu18.04.sh
 
 #### 演示视频（基于 Ubuntu Server 18.04 LTS）
 
+B站传送门：[av967577292](https://www.bilibili.com/video/BV1Mp4y1C7Xx)
+
 <iframe src="//player.bilibili.com/player.html?aid=967577292&bvid=BV1Mp4y1C7Xx&cid=174110142&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
     
 ### 基于 Deepin15+ 安装
