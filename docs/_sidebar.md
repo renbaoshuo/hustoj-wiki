@@ -27,6 +27,7 @@
 
   - 关于
     - [关于本项目](/About)
+    - [镜像](/Mirrors)
     - [更新日志](/UpdateLog)
     - [贡献者](/Contributors)
 
