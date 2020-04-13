@@ -51,6 +51,7 @@
         <!-- 引入 Gitalk 模块 -->
         <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
         <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+        <script src="js/md5.min.js"></script>
         <script>
             const gitalk = new Gitalk({
                     clientID: '6bb275a60f16732d014e',
@@ -59,6 +60,7 @@
                     owner: 'renbaoshuo',
                     admin: ['renbaoshuo', 'zhblue', 'DragonLucifer', 'flymyd', 'gavincc', 'Geekxiong', 'Henrai', 'mjiuming', 'muzea', 'MX-Qulin', 'skykiss', 'xincmm', 'yemaster'],
                     // facebook-like distraction free mode
+                    id: md5(location.pathname),
                     distractionFreeMode: false
                 });
         </script>
