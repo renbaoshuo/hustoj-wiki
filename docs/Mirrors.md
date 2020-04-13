@@ -6,6 +6,9 @@
 
 ### 镜像站列表
 
+- [主站](https://hustoj.wiki/) *由 [宝硕小站](https://www.baoshuo.ren/) 提供和维护*
+- [官方镜像站](https://wiki.hustoj.baoshuo.ren/) *由 [宝硕小站](https://www.baoshuo.ren/) 提供和维护*
+
 
 ### 建立镜像站
 
